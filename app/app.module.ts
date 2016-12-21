@@ -17,6 +17,7 @@ import {AppComponent} from "./app.component";
 import {HeroService} from "./hero/shared/hero.service";
 import {StudentFormComponent} from "./myForms/stutent-form.component";
 import {HeroSearchComponent} from "./hero/heroSearch/hero-search.component";
+import {CrisisListComponent} from "./crisislist/crisis-list.component";
 
 @NgModule({
   imports: [
@@ -32,7 +33,8 @@ import {HeroSearchComponent} from "./hero/heroSearch/hero-search.component";
     HeroDetailComponent,
     HeroesComponent,
     StudentFormComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    CrisisListComponent
   ],
   providers: [ HeroService ],
   bootstrap: [ AppComponent ]
