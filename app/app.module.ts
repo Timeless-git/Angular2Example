@@ -18,12 +18,17 @@ import {HeroService} from "./hero/shared/hero.service";
 import {StudentFormComponent} from "./myForms/stutent-form.component";
 import {HeroSearchComponent} from "./hero/heroSearch/hero-search.component";
 import {CrisisListComponent} from "./crisislist/crisis-list.component";
+import {AdminModule} from "./admin/admin.module";
+import {LoginRoutingModule} from "./login-routing.module";
+import {LoginComponent} from "./login.component";
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    LoginRoutingModule,
+    AdminModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
     AppRoutingModule
   ],
@@ -34,7 +39,8 @@ import {CrisisListComponent} from "./crisislist/crisis-list.component";
     HeroesComponent,
     StudentFormComponent,
     HeroSearchComponent,
-    CrisisListComponent
+    CrisisListComponent,
+    LoginComponent
   ],
   providers: [ HeroService ],
   bootstrap: [ AppComponent ]

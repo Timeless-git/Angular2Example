@@ -6,6 +6,7 @@ import {HeroDetailComponent} from "./hero/heroDetail/hero-detail.component";
 import {HeroesComponent} from "./hero/heroes.component";
 import {StudentFormComponent} from "./myForms/stutent-form.component";
 import {CrisisListComponent} from "./crisislist/crisis-list.component";
+import {AdminComponent} from "./admin/admin.component";
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes',     component: HeroesComponent },
   {path: 'student', component:StudentFormComponent},
-  {path: 'crisis-center', component:CrisisListComponent}
+  {path: 'crisis-center', component:CrisisListComponent},
+  {path: 'admin', component:AdminComponent}
 ];
 
 @NgModule({
